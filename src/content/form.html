@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=latin-ext" rel="stylesheet">
+    <title>JS Playground</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <div class="navigation__logo"> </div>
+            <ul class="navigation__list navigation__list--js">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="../index.html">
+                             Back
+                        </a>
+                </li>
+            </ul>
+            <button class="navigation__switcher navigation__switcher--js"></button>
+        </nav>
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__heading">
+                    Forms
+                </h1>
+                <span class="header__description">
+            Formularze
+        </span>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <form action="https://dev.cotenfrontend.pl" method="post" class="form">
+                    <p class="container__form">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" value="korni" required>
+                    </p>
+                    <p class="container__form">
+                        <label for="surname">Surname</label><br>
+                        <input type="text" name="surname" id="surname" placeholder="Enter your surname" required>
+                    </p>
+                    <p class="container__form">
+                        <label for="surname">Age</label><br>
+                        <input type="number" name="age" id="age" placeholder="Enter your age" min="0" required>
+                    </p>
+                    <p class="container__form">
+                        <label for="surname">Job</label><br>
+                        <input type="text" name="job" id="job" placeholder="Your current job" required>
+                    </p>
+                    <p class="container__form">
+                        <label for="range">From 1 to 10 how happy you are at your work</label><br>
+                        <input type="range" checked name="range" id="range" min="0" max="10" step="1" value="5">
+                    </p>
+                    <p class="container__form">
+                        <label for="telnumber">Your number</label><br>
+                        <input type="tel" name="telnumber" id="telnumber" placeholder="Enter your number" required>
+                    </p>
+                    <p class="container__form">
+                        <label for="email">Your email adress</label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter your email adress" required>
+                    </p>
+                    <p class="container__form">
+                        <label for="password">Your password</label><br>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                    </p>
+
+                    <input type="submit" value="Send the form">
+            </div>
+            <div class="main__container">
+                <fieldset>
+                    <legend>Select your favourite pet</legend>
+                    <p class="container__form">
+                        <label for="radio1">Alpaca</label>
+                        <input type="radio" name="myradio" id="radio1" value="user favourite pet is Alpaca">
+                    </p>
+
+                    <p class="container__form">
+                        <label for="radio2">Okapi</label>
+                        <input type="radio" checked name="myradio" id="radio2" value="user favourite pet is Okapi">
+                    </p>
+
+                    <p class="container__form">
+                        <label for="radio3">Aligator Gar</label>
+                        <input type="radio" name="myradio" id="radio3" value="user favourite pet is Aligator Gar">
+                    </p>
+
+                </fieldset>
+                <p class="container__form">
+                    <label for="checkbox">Relax yourself and CLICK THAT RADIO BUTTON</label><br>
+                    <input type="checkbox" name="mychexbox" id="chexbox" value="user status : relaxed">
+                </p>
+                <p class="container__form">
+                    <label for="checkbox" value="user status : relaxed">Relax yourself and CLICK THAT RADIO BUTTON</label><br>
+                    <input type="checkbox" checked name="mychexbox" id="chexbox">
+                </p>
+
+                <!--<p class="container__form">
+                        <label for="avatar">Your Avatar</label>
+                        <input type="file" name="avatar" id="avatar">
+                    </p>
+-->
+                <p class="container__form">
+                    <label for="select">Are you agree with me?</label><br>
+                    <select name="select" id="select">
+                        <option value ="user selected yes">Yes</option>
+                        <option value ="user selected no">No</option>
+                        <option value ="user selected maybe">Maybe</option>
+                    </select>
+                </p>
+                <p class="container__form">
+                    <label for="textarea">Describe your day</label><br>
+                    <textarea name="textarea" id="textarea" placeholder="Describe your day">Nie posiada Value, pozwala na uzupełnianie treści prosto z TAGU
+                            </textarea>
+                </p>
+                </form>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <hr class="footer__horizontal-line">
+            <span class="footer__text">
+                Created with love in Cracow - 2019
+            </span>
+        </footer>
+        <script src="../js/main.js"></script>
+    </div>
+</body>
+
+</html>
