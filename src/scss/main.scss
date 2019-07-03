@@ -10,11 +10,6 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    //color: $yellow;
-    //background: $violet;
-}
-
 html {
     box-sizing: border-box;
 }
@@ -27,19 +22,16 @@ html {
 
 .article {
     padding: 16px;
-}
-
-.article__footer {
-    text-align: center;
-    font-size: 75%;
-}
-
-.article__header {
-    font-size: 16px;
-}
-
-.article__paragraph {
-    font-size: 14px;
+    &__footer {
+        text-align: center;
+        font-size: 75%;
+    }
+    &__header {
+        font-size: 16px;
+    }
+    &__paragraph {
+        font-size: 14px;
+    }
 }
 
 body {
@@ -55,10 +47,9 @@ body {
     grid-template-rows: minmax(55px, auto) minmax(auto, 110px) 1fr minmax(auto, 110px);
     width: 100%;
     min-height: 100vh;
-}
-
-.container__form {
-    padding: 10px;
+    &__form {
+        padding: 10px;
+    }
 }
 
 .footer {
@@ -70,15 +61,13 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-.footer__navigation {
-    padding-bottom: 16px;
-}
-
-.footer__text {
-    font-size: 75%;
-    color: $font__secondary--dark
+    &__navigation {
+        padding-bottom: 16px;
+    }
+    &__text {
+        font-size: 75%;
+        color: $font__secondary--dark
+    }
 }
 
 .header {
@@ -91,24 +80,21 @@ body {
     background-color: $background__primary--dark;
     padding: 10px;
     z-index: 1;
-}
-
-.header__container {
-    max-width: 760px;
-    width: 100%;
-    padding-left: 16px;
-}
-
-.header__description {
-    font-size: 12px;
-    color: $font__secondary--light;
-}
-
-.header__heading {
-    font-weight: normal;
-    font-size: 24px;
-    color: $font__primary--light;
-    margin: 0px 0 5px 0;
+    &__container {
+        max-width: 760px;
+        width: 100%;
+        padding-left: 16px;
+    }
+    &__description {
+        font-size: 12px;
+        color: $font__secondary--light;
+    }
+    &__heading {
+        font-weight: normal;
+        font-size: 24px;
+        color: $font__primary--light;
+        margin: 0px 0 5px 0;
+    }
 }
 
 .main {
@@ -120,10 +106,15 @@ body {
     max-width: 760px;
     width: 100%;
     background-color: $background__secondary--light;
-}
-
-.main--single-column {
-    grid-template-columns: 1fr;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        align-items: center;
+    }
+    &--single-column {
+        grid-template-columns: 1fr;
+    }
 }
 
 .navigation {
@@ -137,115 +128,98 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
     z-index: 2;
     text-transform: uppercase;
-}
-
-.navigation__list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navigation__link {
-    text-decoration: none;
-    cursor: pointer;
-    padding: 0 1rem 8px 1rem;
-    font-size: 75%;
-    color: white;
-}
-
-
-/* After pointing on navigation, all links exept the pointed one ll color :#ccc // another way : .navigation:hover > *:not(:hover) { */
-
-.navigation__list--top:hover .navigation__link--top {
-    color: $font__disabled--light;
-}
-
-.navigation__list--top:hover .navigation__link--top:hover {
-    color: $font__primary--light;
-}
-
-.navigation__link:focus,
-.navigation__link:active {
-    padding-bottom: 16px;
-    border-bottom: 2px solid;
-}
-
-.navigation__link--footer {
-    color: $font__secondary--dark;
-    padding-bottom: 16px;
-}
-
-.navigation__link--footer:hover {
-    color: $font__primary--dark;
-}
-
-.navigation__link--footer:focus,
-.navigation__link--footer:active {
-    border-bottom: 0px;
-}
-
-.navigation__logo {
-    max-width: 45px;
-    max-height: 45px;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: black;
-}
-
-.navigation__switcher {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    background: none;
-    color: white;
-    border: none;
-}
-
-.navigation__switcher::after {
-    content: "≡";
-    &--exit::after {
-        content: "x";
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &--top:hover,
+        &--top {
+            color: $font__disabled--light;
+        }
+        &--top:hover,
+        &--top:hover {
+            color: $font__primary--light;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0 1rem 8px 1rem;
+        font-size: 75%;
+        color: white;
+        &:focus,
+        &:active {
+            padding-bottom: 16px;
+            border-bottom: 2px solid;
+        }
+        &--footer {
+            color: $font__secondary--dark;
+            padding-bottom: 16px;
+            &:hover {
+                color: $font__primary--dark;
+            }
+            &:focus,
+            &:active {
+                border-bottom: 0px;
+            }
+        }
+    }
+    &__logo {
+        max-width: 45px;
+        max-height: 45px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: black;
+    }
+    &__switcher {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: none;
+        color: $font__primary--light;
+        border: none;
+        &::after {
+            content: "≡";
+            &--exit::after {
+                content: "x";
+            }
+        }
     }
 }
 
-.main__container {
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    align-items: center;
-}
-
-@media(min-width: 650px) {
+@media(min-width: $mobile) {
     .navigation__switcher {
         display: none;
     }
 }
 
-@media(max-width: 650px) {
+@media(max-width: $mobile) {
     .main {
         grid-template-columns: 1fr;
     }
-    .navigation__logo {
-        display: none;
-    }
-    .navigation__item {
-        padding: 16px;
-    }
-    .navigation__list {
-        display: none;
-        flex-direction: column;
-    }
-    .navigation__list--visible {
-        display: flex;
-    }
-    .navigation__link {
-        font-size: 125%;
-    }
-    .navigation__link:focus,
-    .navigation__link:active {
-        padding-bottom: 0;
-        border-bottom: 0px;
+    .navigation {
+        &__logo {
+            display: none;
+        }
+        &__item {
+            padding: 16px;
+        }
+        &__list {
+            display: none;
+            flex-direction: column;
+            &--visible {
+                display: flex;
+            }
+        }
+        &__link {
+            font-size: 125%;
+            &:focus,
+            &:active {
+                padding-bottom: 0;
+                border-bottom: 0px;
+            }
+        }
     }
 }
