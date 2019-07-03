@@ -405,7 +405,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #202124;
+  background-color: #212121;
   padding: 10px;
   z-index: 1; }
 
@@ -458,7 +458,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #202124;
+  background-color: #212121;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 2;
@@ -484,7 +484,7 @@ body {
   color: rgba(255, 255, 255, 0.301829); }
 
 .navigation__list--top:hover .navigation__link--top:hover {
-  color: white; }
+  color: #FFFFFF; }
 
 .navigation__link:focus,
 .navigation__link:active {
@@ -520,9 +520,8 @@ body {
 
 .navigation__switcher::after {
   content: "≡"; }
-
-.navigation__switcher--exit::after {
-  content: "x"; }
+  .navigation__switcher::after--exit::after {
+    content: "x"; }
 
 .main__container {
   display: -webkit-box;

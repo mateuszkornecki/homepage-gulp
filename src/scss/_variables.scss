@@ -1,2 +1,16 @@
-$violet: #2D2241;
-$yellow: #F9C802;
+//FONT - COLORS
+//dark
+$font__primary--dark: rgba(0, 0, 0, 0.87);
+$font__secondary--dark: rgba(0, 0, 0, 0.541327);
+$font__disabled--dark: rgba(0, 0, 0, 0.38);
+//light
+$font__primary--light: #FFFFFF;
+$font__secondary--light: rgba(255, 255, 255, 0.695482);
+$font__disabled--light: rgba(255, 255, 255, 0.301829);
+//BACKGROUND - COLORS
+//dark
+$background__primary--dark: #212121;
+$background__secondary--dark: #313131;
+//light
+$background__primary--light: #E0E0E0;
+$background__secondary--light: #FAFAFA;
