@@ -44,37 +44,37 @@
         </span>
             </div>
         </header>
-        <main class="main">
+        <main class="main main--form">
             <div class="main__container">
                 <form action="https://dev.cotenfrontend.pl" method="post" class="form">
                     <p class="container__form">
-                        <label for="email">Your email adress</label><br>
+                        <label for="email">Your email adress</label>
                         <input class="form__input" type="email" name="email" id="email" placeholder="Enter your email adress" required>
                     </p>
                     <p class="container__form">
-                        <label for="password">Your password</label><br>
+                        <label for="password">Your password</label>
                         <input class="form__input" type="password" name="password" id="password" placeholder="Enter your password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
                     </p>
                     <p class="container__form">
-                        <label for="name">Name</label><br>
+                        <label for="name">Name</label>
                         <input class="form__input" type="text" name="name" id="name" placeholder="Enter your name" required>
                     </p>
                     <p class="container__form">
-                        <label for="surname">Surname</label><br>
+                        <label for="surname">Surname</label>
                         <input class="form__input" type="text" name="surname" id="surname" placeholder="Enter your surname" required>
                     </p>
                     <p class="container__form">
-                        <label for="surname">Age</label><br>
+                        <label for="surname">Age</label>
                         <input class="form__input" type="number" name="age" id="age" placeholder="Enter your age" min="0" required>
                     </p>
 
 
                     <p class="container__form">
-                        <label for="telnumber">Your number</label><br>
+                        <label for="telnumber">Your number</label>
                         <input class="form__input" type="tel" name="telnumber" id="telnumber" placeholder="Enter your number" required>
                     </p>
                     <p class="container__form">
-                        <label for="surname">Job</label><br>
+                        <label for="surname">Job</label>
                         <input class="form__input" type="text" name="job" id="job" placeholder="Your current job" required>
                     </p>
 
@@ -82,9 +82,6 @@
                         <label for="range">From 1 to 10 how happy you are at your work</label><br>
                         <input class="form__input" type="range" checked name="range" id="range" min="0" max="10" step="1" value="5">
                     </p>
-
-
-                    <input class="form__submit" type="submit" value="Send the form">
             </div>
             <div class="main__container">
                 <p class="container__form container__form--checkbox-text">
@@ -111,7 +108,6 @@
                         <label for="radio3">Aligator Gar</label>
                         <input type="radio" name="myradio" id="radio3" value="user favourite pet is Aligator Gar">
                     </p>
-
                 </fieldset>
 
 
@@ -121,7 +117,7 @@
                     </p>
 -->
                 <p class="container__form">
-                    <label for="select">Are you agree with me?</label><br>
+                    <label for="select">Are you agree with me?</label>
                     <select name="select" id="select">
                         <option value ="user selected yes">Yes</option>
                         <option value ="user selected no">No</option>
@@ -129,10 +125,11 @@
                     </select>
                 </p>
                 <p class="container__form">
-                    <label for="textarea">Describe your day</label><br>
-                    <textarea class="form__text-area" name="textarea" id="textarea" placeholder="Describe your day">Nie posiada Value, pozwala na uzupełnianie treści prosto z TAGU
-                            </textarea>
+                    <label for="textarea">Describe your day</label>
+                    <textarea class="form__text-area" name="textarea" id="textarea" placeholder="Describe your day">
+                    </textarea>
                 </p>
+                <input class="form__submit" type="submit" value="Send the form">
                 </form>
             </div>
 
