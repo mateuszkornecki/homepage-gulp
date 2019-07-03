@@ -354,6 +354,8 @@ body {
   min-height: 100vh; }
   .container__form {
     padding: 10px; }
+    .container__form--checkbox-text {
+      font-size: 75%; }
 
 .footer {
   -ms-grid-row: 4;
@@ -380,6 +382,19 @@ body {
   .footer__text {
     font-size: 75%;
     color: rgba(0, 0, 0, 0.541327); }
+
+.form__input {
+  padding: 16px 0 8px 0;
+  border: 0;
+  border-bottom: 2px solid #009688; }
+
+.form__text-area {
+  padding: 5px;
+  border: 0;
+  border-bottom: 2px solid #009688; }
+
+.formsubmit {
+  background-color: #009688; }
 
 .header {
   -ms-grid-row: 2;
