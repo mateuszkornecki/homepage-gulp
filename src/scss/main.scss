@@ -49,6 +49,9 @@ body {
     min-height: 100vh;
     &__form {
         padding: 10px;
+        &--checkbox-text {
+            font-size: 75%;
+        }
     }
 }
 
@@ -67,6 +70,22 @@ body {
     &__text {
         font-size: 75%;
         color: $font__secondary--dark
+    }
+}
+
+.form {
+    &__input {
+        padding: 16px 0 8px 0;
+        border: 0;
+        border-bottom: 2px solid $input__underline;
+    }
+    &__text-area {
+        padding: 5px;
+        border: 0;
+        border-bottom: 2px solid $input__underline;
+    }
+    &submit {
+        background-color: $input__underline;
     }
 }
 
