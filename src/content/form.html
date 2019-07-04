@@ -48,33 +48,33 @@
             <div class="main__container">
                 <form action="https://dev.cotenfrontend.pl" method="post" class="form">
                     <p class="container__form">
-                        <label for="email">Your email adress</label>
+                        <label for="email">Your email adress</label><br>
                         <input class="form__input" type="email" name="email" id="email" placeholder="Enter your email adress" required>
                     </p>
                     <p class="container__form">
-                        <label for="password">Your password</label>
+                        <label for="password">Your password</label><br>
                         <input class="form__input" type="password" name="password" id="password" placeholder="Enter your password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
                     </p>
                     <p class="container__form">
-                        <label for="name">Name</label>
+                        <label for="name">Name</label><br>
                         <input class="form__input" type="text" name="name" id="name" placeholder="Enter your name" required>
                     </p>
                     <p class="container__form">
-                        <label for="surname">Surname</label>
+                        <label for="surname">Surname</label><br>
                         <input class="form__input" type="text" name="surname" id="surname" placeholder="Enter your surname" required>
                     </p>
                     <p class="container__form">
-                        <label for="surname">Age</label>
+                        <label for="surname">Age</label><br>
                         <input class="form__input" type="number" name="age" id="age" placeholder="Enter your age" min="0" required>
                     </p>
 
 
                     <p class="container__form">
-                        <label for="telnumber">Your number</label>
+                        <label for="telnumber">Your number</label><br>
                         <input class="form__input" type="tel" name="telnumber" id="telnumber" placeholder="Enter your number" required>
                     </p>
                     <p class="container__form">
-                        <label for="surname">Job</label>
+                        <label for="surname">Job</label><br>
                         <input class="form__input" type="text" name="job" id="job" placeholder="Your current job" required>
                     </p>
 
@@ -125,7 +125,7 @@
                     </select>
                 </p>
                 <p class="container__form">
-                    <label for="textarea">Describe your day</label>
+                    <label for="textarea">Please describe your day</label><br>
                     <textarea class="form__text-area" name="textarea" id="textarea" placeholder="Describe your day">
                     </textarea>
                 </p>
@@ -135,7 +135,15 @@
 
         </main>
         <footer class="footer">
-            <hr class="footer__horizontal-line">
+            <nav class="footer__navigation">
+                <ul class="navigation__list navigation__list--footer">
+                    <li class="navigation__item navigation__item--footer">
+                        <a class="navigation__link navigation__link--footer" href="#">
+                                    Back to the top
+                                </a>
+                    </li>
+                </ul>
+            </nav>
             <span class="footer__text">
                 Created with love in Cracow - 2019
             </span>

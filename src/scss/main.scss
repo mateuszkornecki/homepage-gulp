@@ -49,8 +49,8 @@ body {
     min-height: 100vh;
     &__form {
         padding: 10px 0 10px 0;
-        display: flex;
-        justify-content: space-between;
+        //display: flex;
+        //justify-content: space-between;
         &--checkbox-text {
             font-size: 75%;
         }
@@ -128,13 +128,11 @@ body {
     width: 100%;
     background-color: $background__secondary--light;
     &__container {
-        display: flex;
-        justify-items: flex-start;
         padding: 16px;
     }
     &--form {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: space-between;
     }
     &--single-column {
         grid-template-columns: 1fr;
