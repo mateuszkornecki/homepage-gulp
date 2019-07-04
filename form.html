@@ -44,7 +44,7 @@
         </span>
             </div>
         </header>
-        <main class="main">
+        <main class="main main--form">
             <div class="main__container">
                 <form action="https://dev.cotenfrontend.pl" method="post" class="form">
                     <p class="container__form">
@@ -82,9 +82,6 @@
                         <label for="range">From 1 to 10 how happy you are at your work</label><br>
                         <input class="form__input" type="range" checked name="range" id="range" min="0" max="10" step="1" value="5">
                     </p>
-
-
-                    <input class="form__submit" type="submit" value="Send the form">
             </div>
             <div class="main__container">
                 <p class="container__form container__form--checkbox-text">
@@ -111,7 +108,6 @@
                         <label for="radio3">Aligator Gar</label>
                         <input type="radio" name="myradio" id="radio3" value="user favourite pet is Aligator Gar">
                     </p>
-
                 </fieldset>
 
 
@@ -121,7 +117,7 @@
                     </p>
 -->
                 <p class="container__form">
-                    <label for="select">Are you agree with me?</label><br>
+                    <label for="select">Are you agree with me?</label>
                     <select name="select" id="select">
                         <option value ="user selected yes">Yes</option>
                         <option value ="user selected no">No</option>
@@ -129,16 +125,25 @@
                     </select>
                 </p>
                 <p class="container__form">
-                    <label for="textarea">Describe your day</label><br>
-                    <textarea class="form__text-area" name="textarea" id="textarea" placeholder="Describe your day">Nie posiada Value, pozwala na uzupełnianie treści prosto z TAGU
-                            </textarea>
+                    <label for="textarea">Please describe your day</label><br>
+                    <textarea class="form__text-area" name="textarea" id="textarea" placeholder="Describe your day">
+                    </textarea>
                 </p>
+                <input class="form__submit" type="submit" value="Send the form">
                 </form>
             </div>
 
         </main>
         <footer class="footer">
-            <hr class="footer__horizontal-line">
+            <nav class="footer__navigation">
+                <ul class="navigation__list navigation__list--footer">
+                    <li class="navigation__item navigation__item--footer">
+                        <a class="navigation__link navigation__link--footer" href="#">
+                                    Back to the top
+                                </a>
+                    </li>
+                </ul>
+            </nav>
             <span class="footer__text">
                 Created with love in Cracow - 2019
             </span>
