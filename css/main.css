@@ -352,10 +352,6 @@ body {
   grid-template-rows: minmax(55px, auto) minmax(auto, 110px) 1fr minmax(auto, 110px);
   width: 100%;
   min-height: 100vh; }
-  .container__form {
-    padding: 10px 0 10px 0; }
-    .container__form--checkbox-text {
-      font-size: 75%; }
 
 .footer {
   -ms-grid-row: 4;
@@ -382,6 +378,11 @@ body {
   .footer__text {
     font-size: 75%;
     color: rgba(0, 0, 0, 0.541327); }
+
+.form__container {
+  padding: 10px 0 10px 0; }
+  .form__container--checkbox-text {
+    font-size: 75%; }
 
 .form__input {
   padding: 16px 0 8px 0;
@@ -448,14 +449,13 @@ body {
   max-width: 760px;
   width: 100%;
   background-color: #FAFAFA; }
-  .main__container {
-    padding: 16px; }
   .main--single-column {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr; }
   .main--form {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    padding: 16px; }
   @media (max-width: 650px) {
     .main {
       -ms-grid-columns: 1fr;
