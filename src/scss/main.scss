@@ -80,6 +80,10 @@ body {
         padding: 16px 0 8px 0;
         border: 0;
         border-bottom: 2px solid $input__underline;
+        min-width: 100%;
+    }
+    &__label {
+        font-size: 75%;
     }
     &__text-area {
         padding: 5px;
@@ -130,11 +134,13 @@ body {
     &__container {
         padding: 16px;
     }
-    &--form {
-        display: flex;
-        justify-content: space-between;
-    }
     &--single-column {
+        grid-template-columns: 1fr;
+    }
+    &--form {
+        grid-template-columns: 1fr;
+    }
+    @media(max-width: $mobile) {
         grid-template-columns: 1fr;
     }
 }
@@ -208,20 +214,11 @@ body {
                 content: "x";
             }
         }
+        @media(min-width: $mobile) {
+            display: none;
+        }
     }
-}
-
-@media(min-width: $mobile) {
-    .navigation__switcher {
-        display: none;
-    }
-}
-
-@media(max-width: $mobile) {
-    .main {
-        grid-template-columns: 1fr;
-    }
-    .navigation {
+    @media(max-width: $mobile) {
         &__logo {
             display: none;
         }
