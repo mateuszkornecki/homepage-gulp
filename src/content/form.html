@@ -78,33 +78,27 @@
                 </p>
 
                 <p class="form__container">
-                    <label class="form__label" for="range">From 1 to 10 how happy you are at your work</label><br>
+                    <label class="form__label" for="range">From 1 to 10 how happy you are at your job?</label><br>
                     <input class="form__input" type="range" checked name="range" id="range" min="0" max="10" step="1" value="5">
                 </p>
 
-                <p class="form__container form__container--checkbox-text">
-                    <label class="form__label" for="checkbox">Relax yourself and CLICK THAT RADIO BUTTON</label>
-                    <input type="checkbox" name="mychexbox" id="chexbox" value="user status : relaxed">
-                </p>
-                <p class="form__container form__container--checkbox-text">
-                    <label class="form__label" for="checkbox" value="user status : relaxed">Relax yourself and CLICK THAT RADIO BUTTON</label>
-                    <input type="checkbox" checked name="mychexbox" id="chexbox">
-                </p>
-                <fieldset>
+
+
+                <fieldset class="form__fieldset">
                     <legend>Select your favourite pet</legend>
-                    <p class="form__container">
-                        <label class="form__label" for="radio1">Alpaca</label>
-                        <input type="radio" name="myradio" id="radio1" value="user favourite pet is Alpaca">
+                    <p class="form__container form__container--fieldset">
+                        <input type="radio" name="myradio" id="alpaca" value="user favourite pet is Alpaca">
+                        <label class="form__label form__label--fieldset" for="alpaca">Alpaca</label>
                     </p>
 
-                    <p class="form__container">
-                        <label class="form__label" for="radio2">Okapi</label>
-                        <input type="radio" checked name="myradio" id="radio2" value="user favourite pet is Okapi">
+                    <p class="form__container form__container--fieldset">
+                        <input type="radio" checked name="myradio" id="okapi" value="user favourite pet is Okapi">
+                        <label class="form__label form__label--fieldset" for="okapi">Okapi</label>
                     </p>
 
-                    <p class="form__container">
-                        <label class="form__label" for="radio3">Aligator Gar</label>
-                        <input type="radio" name="myradio" id="radio3" value="user favourite pet is Aligator Gar">
+                    <p class="form__container form__container--fieldset">
+                        <input type="radio" name="myradio" id="aligatorgar" value="user favourite pet is Aligator Gar">
+                        <label class="form__label form__label--fieldset" for="aligatorgar">Aligator Gar</label>
                     </p>
                 </fieldset>
 
@@ -115,7 +109,7 @@
                     </p>
 -->
                 <p class="form__container">
-                    <label class="form__label" for="select">Are you agree with me?</label>
+                    <label class="form__label" for="select">Are you agree with me?</label><br>
                     <select name="select" id="select">
                         <option value ="user selected yes">Yes</option>
                         <option value ="user selected no">No</option>
@@ -124,10 +118,15 @@
                 </p>
                 <p class="form__container">
                     <label class="form__label" for="textarea">Please describe your day</label><br>
-                    <textarea class="form__text-area" name="textarea" id="textarea" placeholder="Describe your day">
-                    </textarea>
+                    <textarea class="form__text-area" name="textarea" id="textarea" placeholder="Describe your day" rows="4"></textarea>
                 </p>
-                <input class="form__submit" type="submit" value="Send the form">
+                <p class="form__container">
+                    <label class="form__label" for="checkbox">Before submiting, relax yourself and <strong>CLICK THAT CHECKBOX</strong></label><br>
+                    <input type="checkbox" name="mychexbox" id="chexbox" value="user status : relaxed">
+                </p>
+                <p class="form__container form__container--submit">
+                    <input class="form__submit" type="submit" value="Send the form">
+                </p>
             </form>
         </main>
         <footer class="footer">

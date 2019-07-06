@@ -75,23 +75,48 @@ body {
         &--checkbox-text {
             font-size: 75%;
         }
+        &--submit {
+            display: flex;
+            justify-content: center;
+        }
+        &--fieldset {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 100%;
+        }
+    }
+    &__fieldset {
+        border: none;
+        border-left: 2px solid $input__underline;
+        font-size: 75%;
     }
     &__input {
         padding: 16px 0 8px 0;
         border: 0;
         border-bottom: 2px solid $input__underline;
         min-width: 100%;
+        background-color: $background__secondary--light;
     }
     &__label {
         font-size: 75%;
+        &--fieldset {
+            margin: 0 8px 0 16px;
+            font-size: 100%;
+        }
     }
     &__text-area {
         padding: 5px;
         border: 0;
         border-bottom: 2px solid $input__underline;
+        min-width: 100%;
     }
-    &submit {
+    &__submit {
         background-color: $input__underline;
+        color: $font__primary--light;
+        height: 45px;
+        width: 175px;
+        border: 0;
+        margin: 0 auto;
     }
 }
 
