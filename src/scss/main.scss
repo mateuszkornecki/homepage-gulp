@@ -254,6 +254,9 @@ body {
             &--visible {
                 display: flex;
             }
+            &--footer {
+                @extend .navigation__list--visible;
+            }
         }
         &__link {
             font-size: 125%;

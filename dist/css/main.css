@@ -570,7 +570,7 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      .navigation__list--visible {
+      .navigation__list--visible, .navigation__list--footer {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
