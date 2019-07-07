@@ -79,8 +79,9 @@ body {
         padding: 10px 0 10px 0;
         //display: flex;
         //justify-content: space-between;
-        &--checkbox-text {
-            font-size: 75%;
+        &--checkbox {
+            display: flex;
+            align-items: center;
         }
         &--submit {
             display: flex;
@@ -91,6 +92,9 @@ body {
             justify-content: flex-start;
             font-size: 100%;
         }
+    }
+    &__checkbox {
+        margin-right: 16px;
     }
     &__fieldset {
         border: none;

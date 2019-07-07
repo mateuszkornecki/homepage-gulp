@@ -387,8 +387,13 @@ body {
 
 .form__container {
   padding: 10px 0 10px 0; }
-  .form__container--checkbox-text {
-    font-size: 75%; }
+  .form__container--checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .form__container--submit {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -404,6 +409,9 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     font-size: 100%; }
+
+.form__checkbox {
+  margin-right: 16px; }
 
 .form__fieldset {
   border: none;
