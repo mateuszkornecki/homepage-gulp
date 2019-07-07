@@ -47,6 +47,7 @@ body {
     grid-template-rows: minmax(55px, auto) minmax(auto, 110px) 1fr minmax(auto, 110px);
     width: 100%;
     min-height: 100vh;
+    background-color: $background__secondary--light;
 }
 
 .footer {
@@ -128,12 +129,13 @@ body {
     align-items: center;
     justify-content: center;
     background-color: $background__primary--dark;
-    padding: 10px;
+    padding: 16px;
     z-index: 1;
     &__container {
         max-width: 760px;
         width: 100%;
-        padding-left: 16px;
+        padding-left: 0px;
+        padding: 16px;
     }
     &__description {
         font-size: 12px;
@@ -145,6 +147,11 @@ body {
         color: $font__primary--light;
         margin: 0px 0 5px 0;
     }
+    @media (max-width: $mobile) {
+        &__container {
+            padding: 0;
+        }
+    }
 }
 
 .main {
@@ -155,7 +162,6 @@ body {
     grid-gap: 16px;
     max-width: 760px;
     width: 100%;
-    background-color: $background__secondary--light;
     &--single-column {
         grid-template-columns: 1fr;
     }
@@ -179,6 +185,20 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
     z-index: 2;
     text-transform: uppercase;
+    @media(max-width: $mobile) {
+        padding: 0;
+    }
+    &:hover &__link {
+        color: $font__disabled--light;
+    }
+    &:hover &__link:hover {
+        color: $font__primary--light;
+    }
+    &__item {
+        @media(max-width: $mobile) {
+            padding: 16px 0 16px 0;
+        }
+    }
     &__list {
         display: flex;
         list-style: none;
@@ -192,13 +212,23 @@ body {
         &--top:hover {
             color: $font__primary--light;
         }
+        @media(max-width: $mobile) {
+            display: none;
+            flex-direction: column;
+            &--visible {
+                display: flex;
+            }
+            &--footer {
+                @extend .navigation__list--visible;
+            }
+        }
     }
     &__link {
         text-decoration: none;
         cursor: pointer;
         padding: 0 1rem 8px 1rem;
         font-size: 75%;
-        color: white;
+        color: $font__primary--light;
         &:focus,
         &:active {
             padding-bottom: 16px;
@@ -215,6 +245,23 @@ body {
                 border-bottom: 0px;
             }
         }
+        &--current {
+            padding-bottom: 16px;
+            border-bottom: 2px solid;
+            @media (max-width: $mobile) {
+                border-bottom: 0;
+                border-left: 2px solid;
+                padding-bottom: 0;
+            }
+        }
+        @media(max-width: $mobile) {
+            font-size: 125%;
+            &:focus,
+            &:active {
+                padding-bottom: 0;
+                border-bottom: 0px;
+            }
+        }
     }
     &__logo {
         max-width: 45px;
@@ -223,6 +270,9 @@ body {
         height: 100%;
         border-radius: 50%;
         background-color: black;
+        @media(max-width: $mobile) {
+            display: none;
+        }
     }
     &__switcher {
         position: absolute;
@@ -239,32 +289,6 @@ body {
         }
         @media(min-width: $mobile) {
             display: none;
-        }
-    }
-    @media(max-width: $mobile) {
-        &__logo {
-            display: none;
-        }
-        &__item {
-            padding: 16px;
-        }
-        &__list {
-            display: none;
-            flex-direction: column;
-            &--visible {
-                display: flex;
-            }
-            &--footer {
-                @extend .navigation__list--visible;
-            }
-        }
-        &__link {
-            font-size: 125%;
-            &:focus,
-            &:active {
-                padding-bottom: 0;
-                border-bottom: 0px;
-            }
         }
     }
 }
