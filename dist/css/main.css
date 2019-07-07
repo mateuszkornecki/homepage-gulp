@@ -376,6 +376,11 @@ body {
   text-align: center; }
   .footer__navigation {
     padding-bottom: 16px; }
+    .footer__navigation--home {
+      display: none; }
+      @media (max-width: 650px) {
+        .footer__navigation--home {
+          display: block; } }
   .footer__text {
     font-size: 75%;
     color: rgba(0, 0, 0, 0.541327); }

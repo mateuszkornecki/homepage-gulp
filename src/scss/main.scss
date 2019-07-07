@@ -61,6 +61,12 @@ body {
     text-align: center;
     &__navigation {
         padding-bottom: 16px;
+        &--home {
+            display: none;
+            @media (max-width: $mobile) {
+                display: block;
+            }
+        }
     }
     &__text {
         font-size: 75%;
