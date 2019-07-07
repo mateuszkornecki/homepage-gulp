@@ -39,6 +39,7 @@ body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     color: $font__primary--dark;
+    background-color: $background__secondary--light;
 }
 
 .container {
@@ -47,7 +48,6 @@ body {
     grid-template-rows: minmax(55px, auto) minmax(auto, 110px) 1fr minmax(auto, 110px);
     width: 100%;
     min-height: 100vh;
-    background-color: $background__secondary--light;
 }
 
 .footer {
@@ -110,6 +110,7 @@ body {
         border: 0;
         border-bottom: 2px solid $input__underline;
         min-width: 100%;
+        background-color: $background__secondary--light;
     }
     &__submit {
         background-color: $input__underline;
@@ -250,7 +251,7 @@ body {
             border-bottom: 2px solid;
             @media (max-width: $mobile) {
                 border-bottom: 0;
-                border-left: 2px solid;
+                border-left: 4px solid;
                 padding-bottom: 0;
             }
         }
