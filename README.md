@@ -8,7 +8,9 @@ Feel free to check out the finall [result](https://mateuszkornecki.github.io/hom
  **requirements:**<br>
  - node.js (npm)
  - gulp
- <br>`npm install -g gulp-cli`
-
+ **then, just run:** <br>
+`npm install -g gulp-cli`
+`npm install`
+`gulp`
 ### build with: 
 - [wtf-gulp-starter](https://github.com/maciejkorsan/wtf-gulp-starter)
