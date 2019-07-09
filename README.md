@@ -10,5 +10,5 @@ Feel free to check out the finall [result](https://mateuszkornecki.github.io/hom
  - gulp <br>
  ``npm install -g gulp-cli``
 
-#### build with
+### build with: 
 - [wtf-gulp-starter](https://github.com/maciejkorsan/wtf-gulp-starter)
