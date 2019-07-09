@@ -1,5 +1,5 @@
 
-# Homepage - gulp version
+# Homepage - gulp
 Refactored version of my first simple homepage. It was made during *WTF - Co ten frontend* course. <br>
 Feel free to check out the finall [result](https://mateuszkornecki.github.io/homepage-gulp/).
 
