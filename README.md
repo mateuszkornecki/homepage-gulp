@@ -7,7 +7,8 @@ Feel free to check out the finall [result](https://mateuszkornecki.github.io/hom
 
  **requirements:**<br>
  - node.js (npm)
- - gulp <br>
+ - gulp
+ <br>
  ``npm install -g gulp-cli``
 
 ### build with: 
