@@ -10,7 +10,6 @@ Feel free to check out the finall [result](https://mateuszkornecki.github.io/hom
  - gulp <br>
  
  **then, just run:** <br>
-`npm install -g gulp-cli`<br>
 `npm install`<br>
 `gulp`
 ### build with: 
