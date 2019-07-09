@@ -1,6 +1,6 @@
 
 # Homepage - gulp version
-Refactored version of my first simple homepage. It was made during ' *WTF - Co ten frontend*' course. <br>
+Refactored version of my first simple homepage. It was made during *WTF - Co ten frontend* course. <br>
 Feel free to check out the finall [result](https://mateuszkornecki.github.io/homepage-gulp/).
 
 #### to run the website locally
