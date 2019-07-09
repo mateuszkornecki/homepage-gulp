@@ -1,10 +1,5 @@
-<h1 align = 'center'> 
 
-    Homepage - gulp version 
-  <br> 
-  <br>
-</h1>
-
+# Homepage - gulp version
 
 ## About
 Refactored version of simple homepage made during ' WTF - Co ten frontend ' course.
