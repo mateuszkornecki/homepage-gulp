@@ -3,7 +3,7 @@
 Refactored version of my first simple homepage. It was made during *WTF - Co ten frontend* course. <br>
 Feel free to check out the finall [result](https://mateuszkornecki.github.io/homepage-gulp/).
 
-## to run the website locally
+## To run the website locally
 
  **requirements:**
  - node.js (npm)
@@ -12,5 +12,5 @@ Feel free to check out the finall [result](https://mateuszkornecki.github.io/hom
  **then, just run:** <br>
 `npm install`<br>
 `gulp`
-## build with: 
+## Build with: 
 - [wtf-gulp-starter](https://github.com/maciejkorsan/wtf-gulp-starter)
