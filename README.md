@@ -1,10 +1,10 @@
-# wtf-gulp-starter
+# homepage - gulp version
+Simple homepage, made during ' WTF - co ten frontend ' course.
+
+To open it locally run:
 
 `npm install -g gulp-cli`
 
 `npm install`
 
 `gulp`
-
-To publish your page using github pages use `npm run deploy`
-# homepage-gulp
