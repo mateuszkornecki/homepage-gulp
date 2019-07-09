@@ -1,8 +1,13 @@
-<h1 align = 'center'>  Homepage - gulp version </h1>
-<br>
-<hr>
+<h1 align = 'center'> 
+
+    Homepage - gulp version 
+  <br> 
+  <br>
+</h1>
+
+
 ## About
-Simple homepage, made during ' WTF - co ten frontend ' course.
+Refactored version of simple homepage made during ' WTF - Co ten frontend ' course.
 
 [External](https://mateuszkornecki.github.io/homepage-gulp/)
 
