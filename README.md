@@ -1,8 +1,8 @@
 
 # Homepage - gulp version
+Refactored version of simple homepage made during '  WTF - Co ten frontend ' course.
+## Usage
 
-## About
-Refactored version of simple homepage made during ' WTF - Co ten frontend ' course.
 
 [External](https://mateuszkornecki.github.io/homepage-gulp/)
 
