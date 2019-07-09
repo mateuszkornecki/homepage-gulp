@@ -5,7 +5,7 @@ Feel free to check out the finall [result](https://mateuszkornecki.github.io/hom
 
 ### to run the website locally
 
- **requirements:**<br>
+ **requirements:**
  - node.js (npm)
  - gulp <br>
  
