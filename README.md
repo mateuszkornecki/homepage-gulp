@@ -1,6 +1,6 @@
 
 # Homepage - gulp version
-Refactored version of simple homepage made during '  WTF - Co ten frontend ' course. <br>
+Refactored version of my first simple homepage. It was made during ' *WTF - Co ten frontend*' course. <br>
 Feel free to check out the finall [result](https://mateuszkornecki.github.io/homepage-gulp/).
 
 #### to run the website locally
@@ -10,5 +10,5 @@ Feel free to check out the finall [result](https://mateuszkornecki.github.io/hom
  - gulp <br>
  ``npm install -g gulp-cli``
 
-#### Build with
-- [wtf-gulp-starter](https://github.com/maciekwtf/wtf-gulp-starter)
+#### build with
+- [wtf-gulp-starter](https://github.com/maciejkorsan/wtf-gulp-starter)
