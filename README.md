@@ -8,6 +8,7 @@ The main goal this course was to learn essential knowledge of frontend engineers
 
 The main task for this website was to recreate my first project - [simple homepage](https://mateuszkornecki.github.io/homepage/) using newly learned technologies :<br> 
 - gulp task runner and SASS preprocessor (SCSS). <br>
+
 The layout of this website was inspired by [material.io](https://material.io/).
 
 ## Tools and technologies I've used 
