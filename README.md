@@ -12,9 +12,9 @@ The main task for this website was to recreate my first project - [simple homepa
 The layout of this website was inspired by [material.io](https://material.io/).
 
 ## Tools and technologies I've used 
-- HTML5, CSS3, JS3
+- BEM
 - SASS preprocessor (SCSS)
-- GIT
+- Git
 - Visual Studio Code
 - Figma
 - Node.js
